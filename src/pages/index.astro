@@ -1,15 +1,34 @@
 ---
+import linksJSON from "../data/links.json";
+
+const year = new Date().getFullYear();
 ---
 
 <html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Astro</title>
-	</head>
-	<body>
-		<h1>Astro</h1>
-	</body>
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width" />
+    <meta name="generator" content={Astro.generator} />
+    <title>Astro</title>
+  </head>
+  <body>
+    <header>
+      <h1>My Links</h1>
+    </header>
+    <main>
+      <ul>
+        {
+          linksJSON.map((link) => (
+            <li>
+              <a href={link.url}>{link.site}</a>
+            </li>
+          ))
+        }
+      </ul>
+    </main>
+    <footer>
+      <p>Copyright &copy; {year} Arlin Ortiz All Rights Reserved</p>
+    </footer>
+  </body>
 </html>

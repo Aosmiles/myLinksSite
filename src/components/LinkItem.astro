@@ -1,0 +1,19 @@
+---
+interface Props {
+  site: string;
+  url: string;
+}
+
+const { site, url } = Astro.props;
+---
+
+<li class="">
+  <a
+    class="px-3 py-2 block group hover:bg-fuchsia hover:text-white"
+    href={url}
+    target="_blank"
+    ><span class="sm:inline">&#8594;{" "}</span><span
+      class="underline group-hover:no-underline">{site}</span
+    ></a
+  >
+</li>

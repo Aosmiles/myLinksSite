@@ -13,18 +13,20 @@ const year = new Date().getFullYear();
     <meta name="generator" content={Astro.generator} />
     <title>Arlin's Links</title>
   </head>
-  <body class="font-mono py-10 px-10 container mx-auto max-w-md">
+  <body
+    class="h-screen flex flex-col font-mono py-10 px-10 container mx-auto max-w-md"
+  >
     <header class="">
-      <h1 class="text-xl sm:text-3xl font-extrabold uppercase">
-        Arlin's Links &#9742;
+      <h1 class="text-xl sm:text-3xl text-fuchsia font-extrabold uppercase">
+        Arlin's Links &#128397;
       </h1>
     </header>
-    <main class="mt-2 border border-r-4 border-b-4">
+    <main class="mt-6">
       <ul class="text-lg space-y-2">
         {linksJSON.map((link) => <LinkItem site={link.site} url={link.url} />)}
       </ul>
     </main>
-    <footer class="mt-2">
+    <footer class="mt-auto">
       <p class="text-sm text-gray">
         Copyright &copy;{year} Arlin Ortiz All Rights Reserved
       </p>

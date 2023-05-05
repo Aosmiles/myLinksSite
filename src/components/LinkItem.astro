@@ -7,6 +7,17 @@ interface Props {
 const { site, url } = Astro.props;
 ---
 
-<li>
-  <a href={url}>{site}</a>
+<li class="">
+  <a
+    class="px-3 py-2 block group hover:bg-blue hover:text-white hover:font-bold"
+    href={url}
+    target="_blank"
+    ><span class="hidden sm:inline invisible sm:group-hover:visible"
+      >{"< "}</span
+    ><span class="underline decoration-fuchsia group-hover:no-underline"
+      >{site}</span
+    ><span class="hidden sm:inline invisible sm:group-hover:visible"
+      >{" >"}</span
+    ></a
+  >
 </li>

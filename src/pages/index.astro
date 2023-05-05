@@ -8,22 +8,26 @@ const year = new Date().getFullYear();
 <html lang="en">
   <head>
     <meta charset="utf-8" />
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="icon" type="image/x-icon" href="/favicon.ico" />
     <meta name="viewport" content="width=device-width" />
     <meta name="generator" content={Astro.generator} />
-    <title>Astro</title>
+    <title>Arlin's Links</title>
   </head>
-  <body>
-    <header>
-      <h1>My Links</h1>
+  <body class="font-mono py-10 px-10 container mx-auto max-w-md">
+    <header class="">
+      <h1 class="text-xl sm:text-3xl font-extrabold uppercase">
+        Arlin's Links &#9742;
+      </h1>
     </header>
-    <main>
-      <ul>
+    <main class="mt-2 border border-r-4 border-b-4">
+      <ul class="text-lg space-y-2">
         {linksJSON.map((link) => <LinkItem site={link.site} url={link.url} />)}
       </ul>
     </main>
-    <footer>
-      <p>Copyright &copy; {year} Arlin Ortiz All Rights Reserved</p>
+    <footer class="mt-2">
+      <p class="text-sm text-gray">
+        Copyright &copy;{year} Arlin Ortiz All Rights Reserved
+      </p>
     </footer>
   </body>
 </html>

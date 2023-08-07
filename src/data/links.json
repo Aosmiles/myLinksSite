@@ -4,6 +4,10 @@
     "url": "https://twitter.com/ArlinSmiles"
   },
   {
+    "site": "Bluesky",
+    "url": "https://bsky.app/profile/arlinortiz.bsky.social"
+  },
+  {
     "site": "Instagram",
     "url": "https://www.instagram.com/arlinsmiles/"
   },
@@ -16,11 +20,11 @@
     "url": "https://www.patreon.com/AnyWhichWaymaps"
   },
   {
-    "site": "Risopost Patreon",
+    "site": "Risopost (Risograph printed postcards) Patreon",
     "url": "https://www.patreon.com/risopost"
   },
   {
-    "site": "itch.io",
+    "site": "Zines and Textures on itch.io",
     "url": "https://aosmiles.itch.io/"
   },
   {
@@ -28,7 +32,7 @@
     "url": "https://www.kickstarter.com/projects/1093341618/rumored-blades"
   },
   {
-    "site": "Github",
+    "site": "GitHub",
     "url": "https://github.com/Aosmiles"
   }
 ]
